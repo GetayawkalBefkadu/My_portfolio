@@ -1,98 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+  <title>web programing Basics</title>
 <head>
+    <style>
+    .body{
+  background-image: url("body.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+}
+.div_html{
+ background-color: black;
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+.html_h1{
+  text-align: center;
+  text-shadow: 2px 2px red;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.ol_html{
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: white;
+}
+.block_element{
+
+}
+  
+    
+    
+
+
+    </style>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1, initial-scale=1.0">
-    <title>Personal portfolio Website </title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<body>
-    <div id="header">
-       <div class="container"></div>
-         <nav>
-            <image class="logo" src="image/logo.PNG"  ></image>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#"> Contact   </a></li>
-               
-         </ul>
-         </nav>
-    <div class="header-text">
+  <body class="body">
+    <div class="div_html">
+      <h1 class="html_h1" style="color: gold; align-items: center ;">This is  the General basics  concepts of html !!</h1>
+      
+      
+Now you've learned about many more HTML elements! This page is a summary
+of all the elements you've seen so far. You can use this page as a reference if
+you forget how to use one of these elements in your code.
 
-        <p>Front End developer</p>
-        <h1>Hi, I'm <span>Getayawkal</span> Befkadu <br> form Ethopia</h1>
+<h3> Block Elements</h3>Block Elements
+<div class="block_element">
+<p>Block elements are used for large sections of text, such as paragraphs, headlines, or lists; and also
+for some other features such as video players and tables.
+A block element creates a (usually invisible) box in the browser display. By default, this box takes
+up the full width of the display. The beginning of a block always starts on a new line in the display.
+Most block elements have a particular way they are displayed by default: paragraphs have margins
+around them; lists have bullet-points or numbered items; headlines are printed in large text. There
+is also a generic block element, div, which has no special defaults. </p>
+
+
+● <p> — Paragraph.
+Text in a paragraph is separated visually from other paragraphs by a small margin.
+● <ul> and <ol> — Unordered and ordered lists.
+By default, <ul> lists are displayed with bullet points, and <ol> lists with numbered items.
+● <li> — List items inside a <ul> or <ol> list.
+The <li> element has to be nested inside a <ul> or <ol> list; it can't occur on its own.
+● Section headers, from <h1> (largest) to <h6> (smallest).
+Used for headlines, section titles, and the like.
+● <div> — A logical division of a page or document.
+Other block elements such as paragraphs, lists, and headers can be nested inside a <div>.
+You will see the <div> element much more in the next lesson. Because they don't have any
+default display settings, divs are heavily used with custom styling with CSS.
+version 1.0
+</div>
+<div class="inline_element">
+<h3>Inline Elements</h3>Inline Elements
+
+
+Inline elements do not create a full-width box on the display. They modify the display of text, or
+insert other things into the text — such as line breaks, images, or hyperlinks.
+● <em> and <strong> — Emphasis.
+By default, text inside <em> is displayed as italic, and text in <strong> is displayed as
+boldface.
+● <br> — Line break. (empty)
+A line break does not create a new paragraph; it only marks the end of a line.
+● <sub> and <sup> — Superscript and subscript.
+Useful for math and chemistry: I have x3+2x2 molecules of H2O.
+● <mark> — Highlighting.
+Not very often used, but it's kind of cool.
+Some of the inline elements you've seen require attributes, extra information besides the name of
+the element itself. Attributes are written inside the opening tag of the element.
+● <img> — Images.
+Needs a src attribute with a URL, and an alt attribute with descriptive text.
+● <a> — Hyperlinks.
+Needs an href attribute with a URL.
+</div>
+
+<h3 class="image_element">Images</h3>
+
+The syntax for the img tag is like this:
+<img src="Image URL here" alt="A description of the image">
+The URL of an image may be an absolute URL, such as http://placebear.com/800/600, or it
+may be a relative URL such as images/wolves.jpg.
+The alt text is used if the image can't be loaded, or if the user can't see images — such as if the
+user is using a screen reader.
+version 1.0
+Links
+Hyperlinks allow the user to navigate from one page to another. They are created using the a
+element. The destination of the link is written in an attribute called href; the link text appears as
+the contents of the a element. Here's an example:
+<a href="https://en.wikipedia.org/wiki/Hypertext">
+Wikipedia's "Hypertext" article
+</a>
+This code produces a link like this: Wikipedia's "Hypertext" article.
+A link within a single web site can be written using a relative URL. Links to other sites must be
+written as absolute URLs.
+version 1.0
     </div>
-</div><!--div of header -->
-          <div id="about">
-           
-            <div class="container">
-                 <div class="row">
-                    <div class="about-col-1">
-                    <img src="image/me.jpg" class="me" alt="mypicture">
-                    </div>
-
-                        <div class="about-col-2">
-                            <h1 class="sub_title">About Me</h1>
-                             <p class="text_about_me">My name is Getayawkal Befkadu, and I recently graduated [2023] from Unity University with a degree in Computer Science. 
-                                During my time at Unity University, I gained a strong foundation in computer science principles, programming languages, 
-                                and software development methodologies. 
-                               </p> 
-                               <div class="tab_titles">
-                                <p class="tab_links active-link" onclick="opentab('skills')">Skills</p>
-                                <p class="tab_links"onclick="opentab('experienece')">Experience</p>
-                                <p class="tab_links"onclick="opentab('educaton')">Educaton</p> <!--functions -->
-                               </div>
-                               <div class="tab-contents active-tab" id="skills">
-                                 <ul>
-                                    <li><span>Front-End web developer</span><br>HTML,CSS,JS</li>
-                                    <li><span>Basic Computer skills</span><br>MS and Excel</li>
-                                    <li><span>programming</span><br>python, java and VB.NET</li>  
-                                 </ul>
-                               </div>
-
-                               <div class="tab-contents" id="experienece">
-                                <ul>
-                                   <li><span>Fresh graduated -> real time experienece</span></li>
-                                    
-                                </ul>
-                              </div>
+    <!--HTML course ends -->
 
 
-                              <div class="tab-contents" id="educaton">
-                                <ul>
-                                   <li><span>2023- Bacheler degree on Computer since</span><br>Unity University</li>
-                                     
-                                </ul>
-                              </div>
-                        </div>
-                 </div>
-            </div>
+    <!--CSS course Begins -->
+    <div class="div_html">
+      <h1 class="html_h1" style="color: gold; align-items: center ;">Now let us dive in to CSS Course !!</h1>
+      <ol class="ol_html" >
+    </div>
 
 
 
 
-          </div><!--div of about -->
-
-          <!--------servives--------->
-          <!------coitinue here the next step-------->
-
- <script>
-
-    var  tablinks = document.getElementsByClassName("tab_links");
-    var  tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link"); 
-        document.getElementById(tabname).classList.add("active-tab");
-    } 
- </script>         
 </body>
-</html>     
+
+</html>
