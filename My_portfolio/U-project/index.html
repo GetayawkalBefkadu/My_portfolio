@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend Developer Roadmap - Learn and become a frontend developer">
+    <title>Frontend Developer Roadmap</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS stylesheet -->
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle Button -->
+    <button id="toggleMode">Switch to Light Mode</button>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Frontend Developer Roadmap</h1> <!-- Main title of the website -->
+        <nav>
+            <ul>
+                <li><a href="#internet">Internet Basics</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#react">React Framework</a></li>
+                <li><a href="#git-github">Git & GitHub</a></li>
+                <li><a href="#pdf">PDF Resources</a></li>
+                <li><a href="#seo">SEO Concepts</a></li>
+                <li><a href="#security">Web Security</a></li>
+                <li><a href="#performance">Performance Optimization</a></li>
+                <li><a href="#advanced">Advanced Topics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main>
+        <!-- Section: Internet Basics -->
+        <section id="internet">
+            <h2>Internet Basics</h2>
+            <p>The internet is a global network of interconnected computers that communicate through protocols. It enables the transfer of information between clients (user devices) and servers (web servers hosting the website content).</p>
+            
+            <h3>How the Internet Works</h3>
+            <p>When you enter a URL in your browser, the following occurs:</p>
+            <ol>
+                <li><strong>DNS Resolution:</strong> The browser queries a DNS server to resolve the domain name into an IP address.</li>
+                <li><strong>Establishing a Connection:</strong> The browser establishes a connection to the server using the IP address.</li>
+                <li><strong>HTTP Request:</strong> The browser sends an HTTP request to the server for the specific resource.</li>
+                <li><strong>Response:</strong> The server processes the request and sends back an HTTP response containing the requested data (like an HTML document).</li>
+            </ol>
+
+            <h3>What is HTTP?</h3>
+            <p>HTTP (Hypertext Transfer Protocol) is the protocol used for transferring web pages on the internet. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to various requests.</p>
+
+            <h3>What is DNS?</h3>
+            <p>DNS (Domain Name System) is like a phone book for the internet. It translates human-readable domain names (like www.example.com) into numerical IP addresses (like 192.168.1.1), allowing browsers to load Internet resources.</p>
+
+            <h3>Example: Basic HTTP Request</h3>
+            <pre>
+                GET /index.html HTTP/1.1
+                Host: www.example.com
+            </pre>
+            <p>This request asks the server to retrieve the <code>index.html</code> file using the HTTP protocol.</p>
+        </section>
+
+        <!-- Section: HTML -->
+        <section id="html">
+            <h2>HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard markup language used to create the structure of web pages. It uses a series of tags to define elements like headings, paragraphs, links, images, and more.</p>
+
+            <h3>HTML Elements and Tags</h3>
+            <p>An HTML element is defined by a start tag, content, and an end tag. For example:</p>
+            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+            <h3>Semantic HTML</h3>
+            <p>Semantic HTML introduces meaning to your content using elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code>. This enhances accessibility and SEO.</p>
+
+            <h3>Example: Basic HTML Document Structure</h3>
+            <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;HTML Example&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Welcome to HTML&lt;/h1&gt;
+                    &lt;p&gt;This is a sample paragraph.&lt;/p&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </code></pre>
+        </section>
+
+        <!-- Section: CSS -->
+        <section id="css">
+            <h2>CSS</h2>
+            <p>CSS (Cascading Style Sheets) is used to control the presentation of web pages, including layout, colors, fonts, and spacing. It enhances the look and feel of a webpage by providing visual styles.</p>
+
+            <h3>CSS Selectors</h3>
+            <p>Selectors are patterns used to select the HTML elements you want to style. For example:</p>
+            <pre><code>
+            /* Select all paragraphs and set their color to blue */
+            p {
+                color: blue;
+            }
+            </code></pre>
+
+            <h3>Responsive Design</h3>
+            <p>Responsive design allows web pages to adjust their layout based on the screen size and device. CSS media queries help implement responsive design:</p>
+            <pre><code>
+            /* Change background color for screens wider than 600px */
+            @media (min-width: 600px) {
+                body {
+                    background-color: lightgray;
+                }
+            }
+            </code></pre>
+        </section>
+
+        <!-- Section: JavaScript -->
+        <section id="javascript">
+            <h2>JavaScript</h2>
+            <p>JavaScript is a programming language used to make web pages interactive. It can update content, validate forms, and manipulate the DOM (Document Object Model).</p>
+
+            <h3>JavaScript Basics</h3>
+            <p>JavaScript code can be embedded directly within an HTML document or in separate JS files. For example:</p>
+            <pre><code>
+// Display an alert
+alert("Hello, World!");
+            </code></pre>
+
+            <h3>DOM Manipulation</h3>
+            <p>DOM Manipulation allows JavaScript to interact with and modify the HTML content. For example:</p>
+            <pre><code>
+// Change the text content of a paragraph
+document.getElementById('myParagraph').textContent = 'New content';
+            </code></pre>
+        </section>
+
+        <!-- Section: React Framework -->
+        <section id="react">
+            <h2>React Framework</h2>
+            <p>React is a JavaScript library for building user interfaces. It allows you to create reusable UI components and manage application state effectively.</p>
+
+            <h3>Why Use React?</h3>
+            <p>React provides a declarative and component-based approach to building UIs, making it easier to develop and maintain applications.</p>
+
+            <h3>Setting Up a React Project</h3>
+            <pre><code>
+npx create-react-app my-app
+cd my-app
+npm start
+            </code></pre>
+
+            <h3>React Components</h3>
+            <p>React applications are built using components:</p>
+            <pre><code>
+// Functional Component
+function Welcome(props) {
+    return &lt;h1&gt;Hello, {props.name}!&lt;/h1&gt;;
+}
+
+// Class Component
+class Welcome extends React.Component {
+    render() {
+        return &lt;h1&gt;Hello, {this.props.name}!&lt;/h1&gt;;
+    }
+}
+            </code></pre>
+
+            <h3>State Management in React</h3>
+            <p>State is managed within components. Use the <code>useState</code> hook:</p>
+            <pre><code>
+import React, { useState } from 'react';
+
+function Counter() {
+    const [count, setCount] = useState(0); // State variable for count
+
+    return (
+        &lt;div&gt;
+            &lt;p&gt;You clicked {count} times&lt;/p&gt;
+            &lt;button onClick={() =&gt; setCount(count + 1)}&gt;Click me&lt;/button&gt;
+        &lt;/div&gt;
+    );
+}
+            </code></pre>
+        </section>
+
+        <!-- Section: Git and GitHub -->
+        <section id="git-github">
+            <h2>Git and GitHub</h2>
+            <p>Git is a version control system that helps developers track changes in their code over time, enabling collaboration, code management, and historical tracking. GitHub is a cloud-based hosting service for Git repositories.</p>
+            
+            <h3>What is Version Control?</h3>
+            <p>Version control systems (VCS) are tools that help developers manage changes to source code over time.</p>
+            <h3>Why Use Git?</h3>
+            <p>Git is popular because it is distributed, fast, and supports branching and merging.</p>
+            <h3>Basic Git Workflow</h3>
+            <p>The basic Git workflow involves initializing a repository, staging changes, and committing:</p>
+            <pre><code>
+git init
+git add .
+git commit -m "Initial commit"
+            </code></pre>
+            <h3>Connecting Local Repository to GitHub</h3>
+            <p>To connect your local Git repository to a GitHub repository, follow these steps:</p>
+            <pre><code>
+git remote add origin &lt;repository-url&gt;
+git push -u origin master
+            </code></pre>
+        </section>
+
+        <!-- Section: PDF Resources -->
+        <section id="pdf">
+            <h2>PDF Resources</h2>
+            <p>Below you can find useful PDF resources related to front-end development.</p>
+            <ul>
+                <li><a href="path/to/your/pdf1.pdf" download>Frontend Developer Roadmap</a></li>
+                <li><a href="path/to/your/pdf2.pdf" download>JavaScript Essentials</a></li>
+                <!-- Add more PDF links here -->
+            </ul>
+        </section>
+
+        <!-- Section: SEO Concepts -->
+        <section id="seo">
+            <h2>SEO Concepts</h2>
+            <p>SEO (Search Engine Optimization) is the practice of enhancing the visibility of a website in search engine results. It is essential for driving organic traffic and improving online presence.</p>
+            
+            <h3>What is SEO?</h3>
+            <p>SEO involves various techniques aimed at optimizing a website to rank higher on search engines like Google. Higher rankings lead to more traffic and potential conversions.</p>
+
+            <h3>Key SEO Concepts</h3>
+            <ul>
+                <li><strong>Keywords:</strong> Keywords are the terms users enter into search engines. Understanding how to choose and use the right keywords is crucial for optimizing content.</li>
+                <li><strong>On-Page SEO:</strong> This includes optimizing individual pages for relevant keywords, creating high-quality content, and ensuring a good user experience.</li>
+                <li><strong>Off-Page SEO:</strong> This focuses on building authority through backlinks from other reputable websites.</li>
+                <li><strong>Technical SEO:</strong> Ensuring that a website is crawlable and indexable by search engines, including optimizing the site’s architecture.</li>
+                <li><strong>Content Quality:</strong> Search engines prioritize high-quality, relevant content. Regularly updating content can positively impact SEO.</li>
+            </ul>
+
+            <h3>SEO Best Practices</h3>
+            <ul>
+                <li><strong>Meta Tags:</strong> Use <code>&lt;title&gt;</code> tags, <code>&lt;meta name="description"&gt;</code>, and header tags (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>) effectively.</li>
+                <li><strong>URL Structure:</strong> Clean, descriptive URLs are essential for both SEO and user experience.</li>
+                <li><strong>Image Optimization:</strong> Optimize images by using descriptive file names and alt attributes.</li>
+                <li><strong>Mobile Friendliness:</strong> Ensure your website is responsive to provide a good experience on mobile devices.</li>
+            </ul>
+
+            <h3>Tools for SEO</h3>
+            <p>Utilize various tools to enhance your SEO efforts:</p>
+            <ul>
+                <li><strong>Google Analytics:</strong> Track website traffic and user behavior.</li>
+                <li><strong>Google Search Console:</strong> Monitor site performance and search traffic.</li>
+                <li><strong>SEO Plugins:</strong> Tools like Yoast SEO can help optimize WordPress sites.</li>
+            </ul>
+        </section>
+
+        <!-- Section: Web Security -->
+        <section id="security">
+            <h2>Web Security</h2>
+            <p>Understanding web security fundamentals is crucial. This section covers:</p>
+            <ul>
+                <li>Authentication Strategies (JWT, OAuth)</li>
+                <li>CORS</li>
+                <li>HTTPS</li>
+                <li>Content Security Policy</li>
+                <li>OWASP Security Risks</li>
+            </ul>
+        </section>
+
+        <!-- Section: Performance Optimization -->
+        <section id="performance">
+            <h2>Performance Optimization</h2>
+            <p>Learn to optimize websites for speed and performance:</p>
+            <ul>
+                <li>PRPL Pattern</li>
+                <li>RAIL Model</li>
+                <li>Performance Metrics</li>
+                <li>Using Lighthouse and DevTools</li>
+                <li>Performance Best Practices</li>
+            </ul>
+        </section>
+
+        <!-- Section: Advanced Topics -->
+        <section id="advanced">
+            <h2>Advanced Topics</h2>
+            <p>Explore advanced topics to further enhance your skills:</p>
+            <ul>
+                <li>SSR (Server-Side Rendering)</li>
+                <li>GraphQL</li>
+                <li>PWA (Progressive Web Apps)</li>
+                <li>Mobile and Desktop Apps (React Native, Electron)</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Frontend Developer Roadmap. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
